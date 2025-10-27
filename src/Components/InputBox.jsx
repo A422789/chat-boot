@@ -22,7 +22,7 @@ const InputBox = () => {
 
   return (
    
-    <div className={`w-full mb-5 text-center relative ${ContextValue.sideBarIsOpen ? 'opacity-40' : ''} md:opacity-100 `}>
+    <div className={`w-full mb-5 text-center relative top-60 md:top-0 ${ContextValue.sideBarIsOpen ? 'opacity-40' : ''} md:opacity-100 `}>
       
 
       <textarea

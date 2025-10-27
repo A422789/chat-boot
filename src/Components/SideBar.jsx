@@ -75,7 +75,7 @@ const SideBar = () => {
       
 
       <main className={`
-        m-3 overflow-y-scroll max-h-8/10
+        m-3 overflow-y-scroll md:overflow-y-hidden max-h-8/10
      
         scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800
       `}>

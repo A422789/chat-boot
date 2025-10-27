@@ -36,6 +36,7 @@ function App() {
           className={`
             text-white text-3xl md:text-4xl lg:text-5xl
             font-light text-center mb-8
+
             transition-opacity duration-300
             ${ContextValue.sideBarIsOpen ? 'opacity-40 md:opacity-100' : 'opacity-100'}
           `}
