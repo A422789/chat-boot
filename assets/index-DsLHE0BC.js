@@ -77,7 +77,7 @@ Error generating stack: `+a.message+`
         
         
         ${i.sideBarIsOpen?"md:ml-[260px] md:w-[calc(100%-260px)  ":"md:ml-[60px] md:w-[calc(100%-60px)]  "}
-      `,children:[G.jsx(Ly,{lengthOfChat:f.length,clearChat:S}),G.jsxs("div",{className:"flex-1 max-h-[80vh] overflow-y-scroll w-full flex flex-col justify-center items-center px-4 md:px-8",children:[s||f.length>0?G.jsxs("div",{className:" w-full mt-5 h-full ",children:[f.map(U=>U.type==="user"?G.jsxs("div",{className:"flex justify-between",children:[G.jsx("span",{}),G.jsx("div",{className:"text-white bg-[#303030] py-2 px-5 w-fit text-end rounded-3xl mb-3 ",children:U.payload},U.id)]}):G.jsx("div",{className:" text-sm text-white mb-2 whitespace-pre-wrap ",children:U.payload},U.id)),h&&G.jsx("div",{className:"w-3 h-3 bg-white rounded-full loading"}),y&&G.jsxs("div",{className:"text-red-900 ",children:["Error:",y]})]}):G.jsx("div",{className:`
+      `,children:[G.jsx(Ly,{lengthOfChat:f.length,clearChat:S}),G.jsxs("div",{className:"flex-1 max-h-[70vh] overflow-y-scroll w-full flex flex-col justify-center items-center px-4 md:px-8",children:[s||f.length>0?G.jsxs("div",{className:" w-full mt-5 h-full ",children:[f.map(U=>U.type==="user"?G.jsxs("div",{className:"flex justify-between",children:[G.jsx("span",{}),G.jsx("div",{className:"text-white bg-[#303030] py-2 px-5 w-fit text-end rounded-3xl mb-3 ",children:U.payload},U.id)]}):G.jsx("div",{className:" text-sm text-white mb-2 whitespace-pre-wrap ",children:U.payload},U.id)),h&&G.jsx("div",{className:"w-3 h-3 bg-white rounded-full loading"}),y&&G.jsxs("div",{className:"text-red-900 ",children:["Error:",y]})]}):G.jsx("div",{className:`
             text-white text-3xl md:text-4xl lg:text-5xl
             font-light text-center mb-8
 
