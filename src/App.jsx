@@ -56,7 +56,7 @@ console.log(chatHistory)
       <NavBar />
 
      
-      <div className='flex-1 w-full flex flex-col justify-center items-center px-4 md:px-8'>
+      <div className='flex-1 max-h-[80vh] overflow-y-scroll w-full flex flex-col justify-center items-center px-4 md:px-8'>
      
        {RequstState||chatHistory.length > 0?(<div className=' w-full mt-5 h-full '>
          {chatHistory.map((item)=>{
