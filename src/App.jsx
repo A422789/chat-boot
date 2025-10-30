@@ -32,7 +32,9 @@ function App() {
   console.log('done!')
 };
 console.log(chatHistory)
-
+const clearChat=()=>{
+  setChatHistory([])
+}
   return (
     <div
       className={`
@@ -53,7 +55,7 @@ console.log(chatHistory)
       `}
     >
     
-      <NavBar />
+      <NavBar lengthOfChat={chatHistory.length} clearChat={clearChat} />
 
      
       <div className='flex-1 max-h-[80vh] overflow-y-scroll w-full flex flex-col justify-center items-center px-4 md:px-8'>

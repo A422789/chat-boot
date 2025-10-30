@@ -4,7 +4,8 @@ import Upgrade from '../assets/Upgrade.png'
 import chatToggle from '../assets/chatToggle.png'
 import SideBar from './SideBar'
 import { SideBarContext } from './Context'
-const NavBar = () => {
+import newChat from '../assets/newChat.png'
+const NavBar = ({lengthOfChat,clearChat}) => {
    const ContextValue=useContext(SideBarContext)
    
   return (
@@ -14,8 +15,10 @@ const NavBar = () => {
         <img src={menu} alt="image" className='h-6 md:invisible' onClick={()=>ContextValue.setSideBarIsOpen(true)}/>
         <div className='flex text-[#dcdbf6] bg-[#373669] p-1.5 py-1.5 px-2.5 pe-3  w-fit rounded-3xl  f items-center text-[13px] font-medium ms-1 tracking-[.5px]'><img className='h-5 me-1' src={Upgrade} alt="image" />Upgrade to Go</div>
        </div>
+       {lengthOfChat>0?(
+        <img src={newChat} alt="image" className='h-6.5 me-1.5' onClick={()=>clearChat()}/>
+       ):<img src={chatToggle} alt="image" className='h-6.5 me-1.5'/>}
        
-       <img src={chatToggle} alt="image" className='h-6.5 me-1.5'/>
            <span className='text-white text-[12px] absolute top-10 left-14 opacity-30'>Made by Ahmed Ayyad</span>
     </div>
 
