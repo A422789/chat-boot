@@ -40,7 +40,7 @@ const clearChat=()=>{
       className={`
         h-screen flex flex-col
         bg-[#212121]
-        overflow-x-scroll
+        
         transition-all duration-300 ease-out
 
 
@@ -58,7 +58,7 @@ const clearChat=()=>{
       <NavBar lengthOfChat={chatHistory.length} clearChat={clearChat} />
 
      
-      <div className='flex-1 max-h-[80vh] overflow-y-scroll w-full flex flex-col justify-center items-center px-4 md:px-8'>
+      <div className='flex-1 max-h-[80vh] overflow-y-scroll w-full ScrollBar flex flex-col justify-center items-center px-4 md:px-8'>
      
        {RequstState||chatHistory.length > 0?(<div className=' w-full mt-5 h-full '>
          {chatHistory.map((item)=>{
@@ -89,7 +89,7 @@ const clearChat=()=>{
         </div>
        )}
     
-        <InputBox onSend={onSend} loading={loading} />
+        <InputBox onSend={onSend} loading={loading} lengthOfChat={chatHistory.length} />
       </div>
     </div>
   )

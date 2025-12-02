@@ -2,7 +2,7 @@ import React, { useContext, useState, useRef, useEffect } from 'react';
 import { SideBarContext } from './Context';
 
 
-const InputBox = ({onSend,loading}) => {
+const InputBox = ({onSend,loading,lengthOfChat}) => {
   const ContextValue = useContext(SideBarContext);
   const [text, setText] = useState(''); 
   const textareaRef = useRef(null); 
@@ -25,10 +25,10 @@ const InputBox = ({onSend,loading}) => {
   const handleTextChange = (event) => {
     setText(event.target.value);
   };
-
+console.log(lengthOfChat)
   return (
    
-    <div className={`w-full mb-5 text-center  fixed bottom-0  ${ContextValue.sideBarIsOpen ? 'opacity-40' : ''} md:opacity-100 `}>
+    <div className={`w-full mb-5 text-center  fixed bottom-0  lg:border-amber-100  ${ContextValue.sideBarIsOpen ? 'opacity-40' : ''} md:opacity-100 ${lengthOfChat>0?'lg:bottom-0':'lg:bottom-60'} `}>
       
 
       <textarea

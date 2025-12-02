@@ -15,3 +15,8 @@
   
   }
 }
+
+
+.ScrollBar{
+  scrollbar-width: none;
+}
