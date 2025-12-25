@@ -25,7 +25,7 @@ const InputBox = ({onSend,loading,lengthOfChat}) => {
   const handleTextChange = (event) => {
     setText(event.target.value);
   };
-console.log(lengthOfChat)
+
   return (
    
     <div className={`w-full mb-5 text-center  fixed bottom-0  lg:border-amber-100  ${ContextValue.sideBarIsOpen ? 'opacity-40' : ''} md:opacity-100 ${lengthOfChat>0?'lg:bottom-0':'lg:bottom-60'} `}>

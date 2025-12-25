@@ -3,9 +3,10 @@
 import { useReducer } from 'react';
 import axios from 'axios';
 
+
 // ... (API_KEY, MODEL_NAME, API_URL, initialState, apiReducer - لا تغيير هنا)
-const API_KEY = 'AIzaSyAq545Y3o3MGmQGwLOsWvse-bmNv9Mdhk4'; 
-const MODEL_NAME = 'gemini-2.5-pro';
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY; 
+const MODEL_NAME = 'gemini-2.0-flash-lite';
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${API_KEY}`;
 
 const initialState = {
